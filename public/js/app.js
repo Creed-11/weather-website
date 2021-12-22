@@ -16,8 +16,8 @@ weatherForm.addEventListener('submit', (e) => {
                 return messageOne.textContent = data.error
             }
 
-            messageOne.textContent= data.Location
-            messageTwo.textContent = 'Weather is ' + data.weather+ " and Temperature is " + data.Temperature + " degrees."
+            messageOne.textContent= 'Weather in '+ data.location+ " is " + data.weather+ " and Temperature is " + data.temperature + " degrees."
+            //messageTwo.textContent = 'Weather is ' + data.weather+ " and Temperature is " + data.Temperature + " degrees."
         })
     })
 })
